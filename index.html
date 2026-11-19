@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#102921">
+<meta name="description" content="진안 치유 음악 아카이브 — 진안의 풍경과 감정을 담은 열두 곡의 음악">
+<title>진안 치유 음악 | JINAN HEALING SOUND</title>
+<style>
+:root{--ink:#192b25;--muted:#718077;--line:#e8ece8;--forest:#1b4535;--cream:#f8f8f3;--gold:#d5b981;--shadow:0 12px 34px rgba(26,50,38,.065)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;background:#f1f2ed;color:var(--ink);-webkit-tap-highlight-color:transparent}button,input{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible{outline:3px solid #b7c891;outline-offset:3px}.app{max-width:520px;min-height:100vh;margin:auto;background:var(--cream);padding-bottom:calc(125px + env(safe-area-inset-bottom));box-shadow:0 0 55px #1b34210b;overflow:hidden}
+.hero{position:relative;isolation:isolate;background:linear-gradient(140deg,#112c25 4%,#275643 68%,#44644d 100%);color:#fff;min-height:369px;padding:27px 25px 34px;overflow:hidden}.hero:before{content:"";position:absolute;z-index:-1;width:350px;height:350px;border:1px solid #ffffff1d;border-radius:50%;top:-152px;right:-173px;box-shadow:0 0 0 47px #ffffff08,0 0 0 96px #ffffff07}.hero:after{content:"";position:absolute;z-index:-1;width:230px;height:230px;border-radius:50%;background:#e6bb7440;filter:blur(80px);right:-65px;bottom:-70px}.brand{display:flex;align-items:center;justify-content:space-between;gap:12px}.brand-mark{display:flex;align-items:center;gap:9px;font-weight:800;letter-spacing:.16em;font-size:10px}.brand-mark svg{width:23px;height:23px}.head-badge{border:1px solid #ffffff36;border-radius:50px;padding:7px 11px;font-size:10px;letter-spacing:.08em;color:#dce8dc}.eyebrow{font-size:11px;letter-spacing:.22em;color:#ddcba2;font-weight:750;margin:41px 0 10px}.hero h1{font-size:clamp(31px,8.5vw,43px);letter-spacing:-.065em;line-height:1.27;font-weight:750;margin:0}.hero h1 em{font-style:normal;color:#f0d8a4}.hero-sub{margin:14px 0 23px;color:#d7e3d9;font-size:13px;line-height:1.85;font-weight:400}.hero-bottom{display:flex;align-items:center;gap:13px}.hero-play{display:flex;align-items:center;justify-content:center;background:#f4e7cc;color:#274636;border:0;width:51px;height:51px;flex-shrink:0;border-radius:50%;box-shadow:0 9px 22px #0c251f44}.hero-play svg{width:19px;height:19px}.hero-play-caption{font-size:13px;font-weight:750}.hero-play-caption span{display:block;font-size:11px;font-weight:450;color:#c7d8cb;margin-top:3px}.hero-orbit{position:absolute;right:-71px;top:86px;width:222px;height:222px;border:1px solid #ffffff20;border-radius:50%;pointer-events:none}.hero-orbit:before,.hero-orbit:after{content:"";position:absolute;border:1px solid #ffffff23;border-radius:50%;inset:24px}.hero-orbit:after{inset:55px;background:radial-gradient(circle,#e2c68c 0 9px,#234b3b 10px 14px,#d8bd88 15px 17px,transparent 18px);border:23px solid #ffffff0e}
+.content{padding:26px 19px 30px}.section-top{display:flex;justify-content:space-between;align-items:end;padding:0 4px;margin-bottom:17px}.section-kicker{color:#809083;font-weight:800;letter-spacing:.19em;font-size:10px}.section-title{font-size:23px;letter-spacing:-.045em;margin:4px 0 0}.count{color:#7e8c80;font-size:12px;margin-bottom:3px}.tracklist{display:grid;gap:10px}.track{position:relative;display:flex;align-items:center;gap:13px;text-align:left;padding:11px 13px;border:1px solid #e8eae3;background:#fff;border-radius:18px;width:100%;min-height:82px;box-shadow:0 4px 16px #293b2e08;transition:background .2s,border-color .2s,transform .2s}.track:active{transform:scale(.99)}.track.active{background:#edf4ed;border-color:#94b09b;box-shadow:0 6px 23px #2b654017}.cover{--c1:#557f61;--c2:#e6d6a4;position:relative;display:grid;place-items:center;flex:0 0 59px;width:59px;height:59px;overflow:hidden;border-radius:13px;background:linear-gradient(140deg,var(--c1),var(--c2));color:#fff}.cover:before{content:"";position:absolute;width:75px;height:75px;border-radius:50%;border:1px solid #ffffff5c;right:-36px;top:-34px;box-shadow:0 0 0 11px #ffffff17,0 0 0 24px #ffffff0c}.cover:after{content:"";position:absolute;inset:auto -13px -32px 10px;height:52px;transform:rotate(-21deg);border-radius:50%;background:#ffffff29}.cover-emoji{font-size:27px;position:relative;z-index:1;filter:drop-shadow(0 2px 4px #0002)}.track-details{flex:1;min-width:0}.track-no{color:#87978b;font-size:10px;font-weight:800;letter-spacing:.11em}.track-title{font-size:14px;line-height:1.45;font-weight:750;letter-spacing:-.035em;margin:5px 0 0;word-break:keep-all}.track-tail{display:grid;place-items:center;flex:0 0 28px;color:#9ba89d}.track.active .track-tail{color:#2e6848}.track-tail svg{width:19px;height:19px}.eq{height:20px;display:flex;align-items:end;gap:3px}.eq i{display:block;width:3px;height:8px;border-radius:4px;background:currentColor;animation:equalize .8s infinite ease-in-out alternate}.eq i:nth-child(2){height:17px;animation-delay:-.35s}.eq i:nth-child(3){height:11px;animation-delay:-.2s}.eq i:nth-child(4){height:15px;animation-delay:-.6s}.eq.paused i{animation-play-state:paused}.closing{text-align:center;color:#99a59a;font-size:11px;letter-spacing:.11em;margin:28px 0 0}
+.player-wrap{position:fixed;z-index:5;bottom:0;left:0;right:0;pointer-events:none}.player{max-width:520px;margin:auto;background:#fff;border-top:1px solid #e4e9e2;box-shadow:0 -12px 35px #13271d15;padding:13px 18px calc(15px + env(safe-area-inset-bottom));pointer-events:auto}.player-progress{display:flex;align-items:center;gap:9px;margin-bottom:12px}.time{font-size:10px;font-variant-numeric:tabular-nums;color:#829086;min-width:32px}.time:last-child{text-align:right}.seek{flex:1;appearance:none;-webkit-appearance:none;height:4px;border:0;border-radius:10px;background:linear-gradient(to right,#376f51 0 var(--progress,0%),#e5ebe4 var(--progress,0%) 100%);cursor:pointer}.seek::-webkit-slider-thumb{appearance:none;width:12px;height:12px;border-radius:50%;background:#356b4e;box-shadow:0 0 0 4px #356b4e18}.seek::-moz-range-thumb{width:12px;height:12px;border:0;border-radius:50%;background:#356b4e}.player-main{display:flex;align-items:center;gap:11px}.player-cover{flex:0 0 43px;width:43px;height:43px;border-radius:11px;background:linear-gradient(140deg,#285844,#dbceaa);display:grid;place-items:center;color:#fff;font-size:21px}.now-text{flex:1;min-width:0}.now-meta{color:#4d7960;font-size:10px;font-weight:750;letter-spacing:.04em;margin-bottom:4px}.now-title{font-size:13px;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.control{background:none;border:none;padding:4px;color:#3e5f4a;display:grid;place-items:center;flex:0 0 30px}.control svg{width:21px;height:21px}.control.primary{border-radius:50%;width:44px;height:44px;flex:0 0 44px;background:#244f3b;color:#fff;box-shadow:0 6px 12px #1d4a312a}.control.primary svg{width:21px;height:21px}.control:disabled{opacity:.3;cursor:not-allowed}.sr-only{position:absolute;clip:rect(0,0,0,0);width:1px;height:1px;overflow:hidden;white-space:nowrap}
+@keyframes equalize{to{height:4px}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;transition:none!important;scroll-behavior:auto!important}}@media(min-width:700px){.app{margin:24px auto;border-radius:22px;min-height:calc(100vh - 48px)}.player{border-radius:17px 17px 0 0}.hero{border-radius:22px 22px 0 0}}@media(max-width:360px){.hero{padding-left:21px;padding-right:21px}.content{padding-left:13px;padding-right:13px}.track{gap:10px;padding:9px}.cover{flex-basis:53px;width:53px;height:53px}.track-title{font-size:13px}.player{padding-left:12px;padding-right:12px}.control{flex-basis:25px}}
+</style>
+</head>
+<body>
+<div class="app">
+<header class="hero">
+  <div class="hero-orbit" aria-hidden="true"></div>
+  <div class="brand"><div class="brand-mark"><svg viewBox="0 0 24 24" fill="none" stroke="#e7d49e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20V5M12 15c-5 0-8-3-8-7 5 0 8 3 8 7ZM12 12c0-5 3-8 8-8 0 5-3 8-8 8Z"/></svg>JINAN HEALING SOUND</div><span class="head-badge">MUSIC ARCHIVE</span></div>
+  <p class="eyebrow">THE SOUND OF JINAN</p>
+  <h1>진안의 풍경을<br><em>음악으로 듣다.</em></h1>
+  <p class="hero-sub">마음에 머무는 열두 개의 선율.<br>당신의 오늘에 작은 쉼표가 되기를.</p>
+  <div class="hero-bottom"><button class="hero-play" id="hero-play" aria-label="첫 번째 곡 재생"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m8 5 12 7-12 7V5Z"/></svg></button><div class="hero-play-caption">음악 감상 시작하기<span>첫 번째 곡부터 천천히</span></div></div>
+</header>
+<main class="content"><div class="section-top"><div><span class="section-kicker">CURATED SOUNDS</span><h2 class="section-title">마음을 위한 플레이리스트</h2></div><div class="count">12 TRACKS</div></div><div class="tracklist" id="tracklist" aria-label="진안 치유 음악 12곡"></div><p class="closing">JINAN · MUSIC FOR YOUR MOMENTS</p></main>
+</div>
+<div class="player-wrap"><section class="player" aria-label="음악 재생기"><div class="player-progress"><span class="time" id="time-now">0:00</span><input class="seek" type="range" min="0" max="1000" value="0" id="seek" aria-label="재생 위치 조정"><span class="time" id="time-total">0:00</span></div><div class="player-main"><div class="player-cover" id="player-cover" aria-hidden="true">♫</div><div class="now-text" aria-live="polite"><div class="now-meta" id="status">음악을 선택해 주세요</div><div class="now-title" id="now-title">진안 치유 음악 아카이브</div></div><button class="control" id="prev" aria-label="이전 곡"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5 5h2v14H5zm3 7 11-7v14z"/></svg></button><button class="control primary" id="toggle" aria-label="재생"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m8 5 12 7-12 7V5Z"/></svg></button><button class="control" id="next" aria-label="다음 곡"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17 5h2v14h-2zM5 5l11 7-11 7z"/></svg></button></div></section></div>
+<audio id="audio" preload="metadata"></audio>
+<script>
+const songs = [
+  {
+    "no": "01",
+    "title": "마음을 담은 소원",
+    "icon": "🌿",
+    "url": "https://github.com/robin3026-stack/JINAN-Healing/raw/refs/heads/main/1.%20%EB%A7%88%EC%9D%8C%EC%9D%84%20%EB%8B%B4%EC%9D%80%20%EC%86%8C%EC%9B%90%20(TITLE).m4a"
+  },
+  {
+    "no": "02",
+    "title": "몽환",
+    "icon": "🌙",
+    "url": "https://github.com/robin3026-stack/JINAN-Healing/raw/refs/heads/main/2.%20%EB%AA%BD%ED%99%98.m4a"
+  },
+  {
+    "no": "03",
+    "title": "한의 울림",
+    "icon": "🎐",
+    "url": "https://github.com/robin3026-stack/JINAN-Healing/raw/refs/heads/main/3.%20%ED%95%9C%EC%9D%98%20%EC%9A%B8%EB%A6%BC.m4a"
+  },
+  {
+    "no": "04",
+    "title": "빨간색 트위스트",
+    "icon": "💃",
+    "url": "https://github.com/robin3026-stack/JINAN-Healing/raw/refs/heads/main/4.%20%EB%B9%A8%EA%B0%84%EC%83%89%20%ED%8A%B8%EC%9C%84%EC%8A%A4%ED%8A%B8.m4a"
+  },
+  {
+    "no": "05",
+    "title": "골목길 호기심",
+    "icon": "👣",
+    "url": "https://github.com/robin3026-stack/JINAN-Healing/raw/refs/heads/main/5.%20%EA%B3%A8%EB%AA%A9%EA%B8%B8%20%ED%98%B8%EA%B8%B0%EC%8B%AC.m4a"
+  },
+  {
+    "no": "06",
+    "title": "해지는 담장의 오후",
+    "icon": "🌇",
+    "url": "https://github.com/robin3026-stack/JINAN-Healing/raw/refs/heads/main/6.%20%ED%95%B4%EC%A7%80%EB%8A%94%20%EB%8B%B4%EC%9E%A5%EC%9D%98%20%EC%98%A4%ED%9B%84.m4a"
+  },
+  {
+    "no": "07",
+    "title": "흥겨운 춤사위",
+    "icon": "🎶",
+    "url": "https://github.com/robin3026-stack/JINAN-Healing/raw/refs/heads/main/7.%20%ED%9D%A5%EA%B2%A8%EC%9A%B4%20%EC%B6%A4%EC%82%AC%EC%9C%84.m4a"
+  },
+  {
+    "no": "08",
+    "title": "이웃에게는 소란, 우리에게는 낭만",
+    "icon": "🏡",
+    "url": "https://github.com/robin3026-stack/JINAN-Healing/raw/refs/heads/main/8.%20%EC%9D%B4%EC%9B%83%EC%97%90%EA%B2%8C%EB%8A%94%20%EC%86%8C%EB%9E%80,%20%EC%9A%B0%EB%A6%AC%EC%97%90%EA%B2%8C%EB%8A%94%20%EB%82%AD%EB%A7%8C!.m4a"
+  },
+  {
+    "no": "09",
+    "title": "축제의 날",
+    "icon": "🎉",
+    "url": "https://github.com/robin3026-stack/JINAN-Healing/raw/refs/heads/main/9.%20%EC%B6%95%EC%A0%9C%EC%9D%98%20%EB%82%A0.m4a"
+  },
+  {
+    "no": "10",
+    "title": "치유의 기도",
+    "icon": "🕊️",
+    "url": "https://github.com/robin3026-stack/JINAN-Healing/raw/refs/heads/main/10.%20%EC%B9%98%EC%9C%A0%EC%9D%98%20%EA%B8%B0%EB%8F%84.m4a"
+  },
+  {
+    "no": "11",
+    "title": "우리의 삶이 음악이 될 때",
+    "icon": "🎼",
+    "url": "https://github.com/robin3026-stack/JINAN-Healing/raw/refs/heads/main/11.%20%EC%9A%B0%EB%A6%AC%EC%9D%98%20%EC%82%B6%EC%9D%B4%20%EC%9D%8C%EC%95%85%EC%9D%B4%20%EB%90%A0%EB%95%8C%20(TITLE).m4a"
+  },
+  {
+    "no": "12",
+    "title": "우리가 사랑한 진안의 가을 밤",
+    "icon": "🍂",
+    "url": "https://github.com/robin3026-stack/JINAN-Healing/raw/refs/heads/main/12.%20%EC%9A%B0%EB%A6%AC%EA%B0%80%20%EC%82%AC%EB%9E%91%ED%95%9C%20%EC%A7%84%EC%95%88%EC%9D%98%20%EA%B0%80%EC%9D%84%20%EB%B0%A4(The%20Jinan%20Autumn%20Night%20We%20Loved).m4a"
+  }
+];
+const palettes=[['#648a6c','#d8c69a'],['#3d547a','#bf9ca6'],['#6683a5','#d4c9c1'],['#bd594c','#e7ae77'],['#75698c','#acb6a0'],['#b17661','#e3c9aa'],['#6b6798','#cfa6c4'],['#52887c','#e0c2a4'],['#b7656e','#edc17d'],['#8b9ca1','#d4d8b6'],['#6a8092','#c5b3a1'],['#a47d58','#e0bf82']];
+const $=id=>document.getElementById(id);
+const audio=$('audio'),list=$('tracklist'),toggle=$('toggle'),status=$('status'),nowTitle=$('now-title'),cover=$('player-cover'),seek=$('seek');
+let current=-1, pending=false;
+const icons={play:'<path d="m8 5 12 7-12 7V5Z"/>',pause:'<path d="M7 5h4v14H7zm6 0h4v14h-4z"/>',arrow:'<path d="m9 5 7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>'};
+const svg=path=>`<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">${path}</svg>`;
+function render(){list.innerHTML=songs.map((s,i)=>{const active=i===current;const playing=active&&!audio.paused;const p=palettes[i];return `<button class="track ${active?'active':''}" data-idx="${i}" aria-label="${s.no}번 ${s.title}${active?', 선택됨':''}" ${active?'aria-current="true"':''}><span class="cover" style="--c1:${p[0]};--c2:${p[1]}"><span class="cover-emoji">${s.icon}</span></span><span class="track-details"><span class="track-no">TRACK ${s.no}</span><span class="track-title" style="display:block">${s.title}</span></span><span class="track-tail">${active?`<span class="eq ${playing?'':'paused'}" aria-hidden="true"><i></i><i></i><i></i><i></i></span>`:svg(icons.arrow)}</span></button>`}).join('');}
+function sync(){const playing=!audio.paused&&current>=0;toggle.innerHTML=svg(playing?icons.pause:icons.play);toggle.setAttribute('aria-label',playing?'일시정지':'재생');if(current>=0&&!pending){status.textContent=playing?'재생 중':'일시정지';}render();}
+function choose(i){if(i<0||i>=songs.length)return;if(current===i){togglePlayback();return;}current=i;const s=songs[i],p=palettes[i];audio.src=s.url;audio.load();cover.textContent=s.icon;cover.style.background=`linear-gradient(140deg,${p[0]},${p[1]})`;nowTitle.textContent=s.title;status.textContent='음악을 불러오는 중';pending=true;seek.value=0;seek.style.setProperty('--progress','0%');$('time-now').textContent='0:00';$('time-total').textContent='0:00';render();attemptPlay();}
+async function attemptPlay(){try{await audio.play();pending=false;sync();}catch(e){pending=false;status.textContent=e.name==='NotAllowedError'?'재생 버튼을 다시 눌러주세요':'음원을 재생할 수 없습니다';syncControlsOnly();}}
+function syncControlsOnly(){const playing=!audio.paused&&current>=0;toggle.innerHTML=svg(playing?icons.pause:icons.play);toggle.setAttribute('aria-label',playing?'일시정지':'재생');render();}
+function togglePlayback(){if(current===-1){choose(0);return;}if(audio.paused){pending=true;status.textContent='음악을 불러오는 중';attemptPlay();}else{audio.pause();}}
+function fmt(sec){if(!Number.isFinite(sec)||sec<0)return '0:00';return `${Math.floor(sec/60)}:${String(Math.floor(sec%60)).padStart(2,'0')}`;}
+list.addEventListener('click',e=>{const button=e.target.closest('[data-idx]');if(button)choose(Number(button.dataset.idx));});$('hero-play').addEventListener('click',()=>choose(0));toggle.addEventListener('click',togglePlayback);$('prev').addEventListener('click',()=>{if(current<0)choose(0);else if(audio.currentTime>3){audio.currentTime=0}else choose((current-1+songs.length)%songs.length)});$('next').addEventListener('click',()=>choose(current<0?0:(current+1)%songs.length));
+audio.addEventListener('play',()=>{pending=false;sync()});audio.addEventListener('pause',()=>{pending=false;sync()});audio.addEventListener('waiting',()=>{if(current>=0){pending=true;status.textContent='음악을 불러오는 중';}});audio.addEventListener('playing',()=>{pending=false;sync()});audio.addEventListener('loadedmetadata',()=>{$('time-total').textContent=fmt(audio.duration)});audio.addEventListener('durationchange',()=>{$('time-total').textContent=fmt(audio.duration)});audio.addEventListener('timeupdate',()=>{$('time-now').textContent=fmt(audio.currentTime);if(Number.isFinite(audio.duration)&&audio.duration>0){const v=audio.currentTime/audio.duration*1000;seek.value=v;seek.style.setProperty('--progress',`${v/10}%`);}});audio.addEventListener('ended',()=>choose((current+1)%songs.length));audio.addEventListener('error',()=>{if(current>=0){pending=false;status.textContent='음원 연결을 확인해 주세요';syncControlsOnly();}});seek.addEventListener('input',()=>{if(Number.isFinite(audio.duration)&&audio.duration>0){audio.currentTime=Number(seek.value)/1000*audio.duration;seek.style.setProperty('--progress',`${Number(seek.value)/10}%`);}});
+render();
+</script>
+<<<<<<< Updated upstream
+</body></html>
+=======
+</body></html>
+>>>>>>> Stashed changes
