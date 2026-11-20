@@ -96,6 +96,36 @@ body{background:#e8e9df;background-image:radial-gradient(circle at 50% 0%,#f7f3e
 .control.primary{width:40px;height:40px;flex-basis:40px}
 @media(max-width:360px){.hero{padding-left:16px !important;padding-right:16px !important}.hero-dept-copy{font-size:10px}.hero h1{font-size:30px !important}.intro-ribbon{padding-left:16px !important;padding-right:16px !important}.content{padding-left:12px !important;padding-right:12px !important}}
 
+
+/* Real-phone compact layout: account for browser address and bottom chrome */
+@media(max-width:699px){
+ .hero{padding:14px 20px 17px !important;min-height:0 !important}
+ .brand-mark{font-size:9px}.head-badge{font-size:8px;padding:5px 8px}
+ .hero-dept-link{margin-top:13px !important;min-height:36px !important;padding:9px 12px !important}
+ .hero-editorial{margin-top:17px !important}
+ .eyebrow{margin-bottom:5px !important;font-size:8px !important}
+ .hero h1{font-size:clamp(28px,7.3vw,34px) !important;line-height:1.1 !important}
+ .hero-sub{margin:7px 0 0 !important;font-size:11px !important;line-height:1.5 !important}
+ .hero-bottom{display:none !important}
+ .hero-photo-caption{bottom:9px;right:18px;font-size:8px}
+ .intro-ribbon{display:none !important}
+ .content{padding:13px 14px 24px !important}
+ .section-top{margin-bottom:9px !important}
+ .section-kicker{font-size:8px !important}
+ .section-title{font-size:19px !important;margin-top:2px !important;line-height:1.15 !important}
+ .count{font-size:10px !important}
+ .tracklist{gap:7px !important}
+ .track{min-height:63px !important;padding:6px 10px !important;border-radius:13px !important;gap:10px !important}
+ .cover{width:46px !important;height:46px !important;flex-basis:46px !important;border-radius:9px !important}
+ .cover-emoji{font-size:21px !important}
+ .track-no{font-size:9px !important}
+ .track-title{font-size:13px !important;margin-top:2px !important}
+ .player{padding:8px 13px calc(9px + env(safe-area-inset-bottom)) !important}
+ .player-progress{margin-bottom:6px !important}
+ .player-main{gap:7px !important}
+ .player-cover{width:34px !important;height:34px !important;flex-basis:34px !important}
+ .control.primary{width:38px !important;height:38px !important;flex-basis:38px !important}
+}
 </style>
 </head>
 <body style="--hero-photo:url('https://commons.wikimedia.org/wiki/Special:FilePath/%EB%A7%88%EC%9D%B4%EC%82%B0.jpg?width=1200');--second-photo:url('https://commons.wikimedia.org/wiki/Special:FilePath/Maisan.jpg?width=900')">
